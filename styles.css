@@ -676,33 +676,29 @@ dd {
   background: #fffaf0;
 }
 
-.wheel-assembly {
+.wheel-photo-grid .wheel-photo {
+  display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  object-position: var(--wheel-position, center);
   background-color: #ddd7cc;
-  background-image: var(--wheel-image);
-  background-repeat: no-repeat;
-  background-size: auto var(--wheel-zoom, 190%);
-  background-position: var(--wheel-position, center);
 }
 
 .wheel-crop-lt {
-  --wheel-image: url("https://gmauthority.com/blog/wp-content/uploads/2023/10/2024-Chevrolet-Camaro-18-Inch-Silver-Painted-Aluminum-Wheel-REG.jpg");
   --wheel-position: 25% 82%;
 }
 
 .wheel-crop-lt1-carbon {
-  --wheel-image: url("https://gmauthority.com/blog/wp-content/uploads/2023/10/2024-Chevrolet-Camaro-20-Inch-5-Spoke-Carbon-Flash-Painted-Aluminum-Wheel-RTH.jpg");
   --wheel-position: 30% 87%;
 }
 
 .wheel-crop-ss-carbon {
-  --wheel-image: url("https://gmauthority.com/blog/wp-content/uploads/2023/10/2024-Chevrolet-Camaro-20-Inch-5-Spoke-Carbon-Flash-Painted-Aluminum-Wheel-56V.jpg");
   --wheel-position: 35% 87%;
 }
 
 .wheel-crop-zl1 {
-  --wheel-image: url("https://gmauthority.com/blog/wp-content/uploads/2023/10/2024-Chevrolet-Camaro-20-Inch-Dark-Graphite-Premium-Paint-Forged-Aluminum-Wheel-RTQ.jpg");
   --wheel-position: 36% 89%;
 }
 
