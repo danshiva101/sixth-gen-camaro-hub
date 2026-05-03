@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sixth Gen Camaro Hub</title>
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --panel: #131722;
+      --text: #f4f6fb;
+      --muted: #b6bed2;
+      --accent: #f5b301;
+      --accent-2: #f24d4d;
+      --card: #171c29;
+      --border: #2a3348;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at top right, #1c2130, var(--bg) 45%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    header {
+      min-height: 68vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(140deg, rgba(245,179,1,.15), rgba(242,77,77,.15));
+    }
+    h1 { font-size: clamp(2rem, 6vw, 4.2rem); margin: 0 0 .5rem; letter-spacing: 1px; }
+    .tagline { font-size: clamp(1rem, 2vw, 1.3rem); color: var(--muted); max-width: 760px; margin: 0 auto 1.2rem; }
+    .btns { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      text-decoration: none;
+      color: #101216;
+      background: var(--accent);
+      padding: .7rem 1.1rem;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+    .btn.secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
+    section { padding: 3.5rem 0; }
+    h2 { font-size: clamp(1.4rem, 3.5vw, 2rem); margin: 0 0 1rem; }
+    .lead { color: var(--muted); max-width: 830px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem;
+    }
+    .card h3 { margin-top: 0; }
+    ul { padding-left: 1.1rem; }
+    .timeline { border-left: 3px solid var(--accent); margin-left: .6rem; padding-left: 1.1rem; }
+    .timeline p { margin: .3rem 0 1rem; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px,1fr)); gap: .8rem; }
+    .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: .9rem; }
+    .stat strong { display: block; font-size: 1.2rem; color: var(--accent); }
+    footer { border-top: 1px solid var(--border); text-align: center; padding: 1.4rem 0 2rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>6th Gen Camaro Hub</h1>
+      <p class="tagline">Everything about the sixth generation Chevrolet Camaro (2016–2024): trims, engines, performance, ownership tips, and why this platform still dominates car culture.</p>
+      <div class="btns">
+        <a class="btn" href="#trims">Explore Trims</a>
+        <a class="btn secondary" href="prompts.html">How I Built This with AI</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="overview">
+      <h2>Why the 6th Gen Matters</h2>
+      <p class="lead">The sixth generation Camaro brought major upgrades: lighter Alpha chassis architecture, sharper handling, improved interiors, and powertrain options from a turbocharged 2.0L all the way to supercharged V8 monsters. It became a true all-around sports car for daily use, track days, and builds.</p>
+      <div class="stats">
+        <div class="stat"><strong>2016</strong> Launch year of 6th gen</div>
+        <div class="stat"><strong>2.0T to 6.2L</strong> Wide engine range</div>
+        <div class="stat"><strong>1LE Packages</strong> Serious track performance</div>
+        <div class="stat"><strong>ZL1</strong> Supercharged flagship</div>
+      </div>
+    </section>
+
+    <section id="trims">
+      <h2>Trim Levels & Personalities</h2>
+      <div class="grid">
+        <article class="card"><h3>LT (1LT, 2LT, 3LT)</h3><p>Best entry point with modern tech and optional V6 power. Great daily driver with sporty styling.</p></article>
+        <article class="card"><h3>SS (1SS, 2SS)</h3><p>6.2L V8 performance icon. Excellent power, sound, and value in the muscle coupe world.</p></article>
+        <article class="card"><h3>ZL1</h3><p>Supercharged 6.2L V8 with track-ready cooling, aero, and suspension. A street-legal missile.</p></article>
+        <article class="card"><h3>1LE Packages</h3><p>Available on multiple trims; adds suspension, tires, braking, and aero for superior lap times.</p></article>
+      </div>
+    </section>
+
+    <section id="engines">
+      <h2>Engine Options</h2>
+      <div class="grid">
+        <div class="card"><h3>2.0L Turbo I4</h3><ul><li>Responsive turbo torque</li><li>Great fuel economy</li><li>Good tuning potential</li></ul></div>
+        <div class="card"><h3>3.6L V6</h3><ul><li>Smooth naturally aspirated power</li><li>Balanced performance</li><li>Distinct high-RPM sound</li></ul></div>
+        <div class="card"><h3>6.2L LT1 V8 (SS)</h3><ul><li>Classic V8 rumble</li><li>Strong aftermarket support</li><li>Excellent drag/roll performance</li></ul></div>
+        <div class="card"><h3>6.2L Supercharged LT4 (ZL1)</h3><ul><li>Extreme power out of the box</li><li>Track-capable thermal management</li><li>Elite performance value</li></ul></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ownership & Modding Tips</h2>
+      <div class="grid">
+        <div class="card"><h3>Starter Mods</h3><p>Intake, cat-back exhaust, quality tires, and suspension alignment can transform feel without sacrificing reliability.</p></div>
+        <div class="card"><h3>Maintenance Priorities</h3><p>Stay ahead on fluids, inspect cooling systems, and keep brakes fresh—especially for spirited driving.</p></div>
+        <div class="card"><h3>Community</h3><p>Forums and local meets are huge for troubleshooting, part recommendations, and build inspiration.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>6th Gen Camaro Timeline</h2>
+      <div class="timeline">
+        <h3>2016</h3>
+        <p>Sixth generation launches on the Alpha platform with significant weight reduction and modernized tech.</p>
+        <h3>2017</h3>
+        <p>ZL1 expands lineup with supercharged LT4 and available 10-speed automatic.</p>
+        <h3>2018–2019</h3>
+        <p>Feature updates and styling changes; 1LE performance packages gain popularity.</p>
+        <h3>2020–2024</h3>
+        <p>Special editions and final production years cement 6th gen status as a future classic.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Built for CSIT 212 • Camaro Enthusiast Project • <a href="prompts.html" style="color:var(--accent)">View AI Prompt Process</a>
+    </div>
+  </footer>
+</body>
+</html>
